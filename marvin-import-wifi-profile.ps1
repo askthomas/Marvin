@@ -8,7 +8,7 @@
 # Variables
 $wifi_path = "C:\Users\ThomasLjunggren\OneDrive\Backup\wifi\"
 $wifi_filter = "*.xml"
-$wifiparam=$args[0]
+#$wifiparam=$args[0]
 
 # Get all filenames
 $files = get-childitem $wifi_path -Filter $wifi_filter
@@ -21,4 +21,3 @@ ForEach ($filename in $files) {
 
 }
 
-$wifiparam
