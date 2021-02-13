@@ -1,5 +1,5 @@
 # ==========================================================
-#  Marvin - Chen for new applications install
+#  Marvin - Check for new applications install on server
 #
 #  (C) Thomas Ljunggren, 2020-09-14
 #
@@ -13,9 +13,9 @@ $Server = "visolit-se.mail.protection.outlook.com" # SMTP Server
 $From = "Marvin <lan.marvin@visolit.se>" # From whom we are sending an e-mail(add anonymous logon permission if needed)
 
 $To = "lan.marvin@visolit.se" # To whom we are sending
-$Pwd = ConvertTo-SecureString "enterpassword" -AsPlainText –Force #Sender account password
+#$Pwd = ConvertTo-SecureString "enterpassword" -AsPlainText –Force #Sender account password
 #(Warning! Use a very restricted account for the sender, because the password stored in the script will be not encrypted)
-$Cred = New-Object System.Management.Automation.PSCredential("lan.marvin@visolit.se" , $Pwd) #Sender account credentials
+#$Cred = New-Object System.Management.Automation.PSCredential("lan.marvin@visolit.se" , $Pwd) #Sender account credentials
 
 $encoding = [System.Text.Encoding]::UTF8 #Setting encoding to UTF8 for message correct display
 
